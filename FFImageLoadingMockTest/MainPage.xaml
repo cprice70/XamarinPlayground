@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FFImageLoadingMockTest" x:Class="FFImageLoadingMockTest.MainPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FFImageLoadingMockTest.MainPage">
     <StackLayout>
-        <!-- Place new controls here -->
-        <ffimageloading:SvgCachedImage Source="resource://FFImageLoadingMockTest.Assets.Captain_America_Shield.svg" />
+        <Button Text="Captain America" Clicked="Handle_Captain_Clicked" />
+        <Button Text="IronMan" Clicked="Handle_IronMan_Clicked" />
     </StackLayout>
 </ContentPage>

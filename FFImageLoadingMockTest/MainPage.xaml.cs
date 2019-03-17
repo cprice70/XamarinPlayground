@@ -9,6 +9,18 @@ namespace FFImageLoadingMockTest
 {
     public partial class MainPage : ContentPage
     {
+        void Handle_Captain_Clicked(object sender, System.EventArgs e)
+        {
+            var page = new CaptainAmericaPage();
+            Navigation.PushAsync (page);
+        }
+
+        void Handle_IronMan_Clicked(object sender, System.EventArgs e)
+        {
+            var page = new IronManPage();
+            Navigation.PushAsync (page);
+        }
+
         public MainPage()
         {
             InitializeComponent();

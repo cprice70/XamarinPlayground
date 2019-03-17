@@ -20,8 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Assets\Captain_America_Shield.svg" />
+    <None Remove="Assets\ironman-icon-png-8.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\Captain_America_Shield.svg" />
+    <EmbeddedResource Include="Assets\ironman-icon-png-8.png" />
   </ItemGroup>
 </Project>
