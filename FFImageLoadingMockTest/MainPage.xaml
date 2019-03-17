@@ -5,5 +5,6 @@
     <StackLayout>
         <Button Text="Captain America" Clicked="Handle_Captain_Clicked" />
         <Button Text="IronMan" Clicked="Handle_IronMan_Clicked" />
+        <Button Text="Thor" Clicked="Handle_Thor_Clicked" />
     </StackLayout>
 </ContentPage>

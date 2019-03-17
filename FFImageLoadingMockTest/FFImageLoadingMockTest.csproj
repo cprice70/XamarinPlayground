@@ -21,9 +21,11 @@
   <ItemGroup>
     <None Remove="Assets\Captain_America_Shield.svg" />
     <None Remove="Assets\ironman-icon-png-8.png" />
+    <None Remove="Assets\thor-512.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\Captain_America_Shield.svg" />
     <EmbeddedResource Include="Assets\ironman-icon-png-8.png" />
+    <EmbeddedResource Include="Assets\thor-512.png" />
   </ItemGroup>
 </Project>

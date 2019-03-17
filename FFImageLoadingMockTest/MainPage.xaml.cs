@@ -21,6 +21,12 @@ namespace FFImageLoadingMockTest
             Navigation.PushAsync (page);
         }
 
+        void Handle_Thor_Clicked(object sender, System.EventArgs e)
+        {
+            var page = new ThorPage();
+            Navigation.PushAsync(page);
+        }
+
         public MainPage()
         {
             InitializeComponent();

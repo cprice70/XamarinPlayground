@@ -37,6 +37,13 @@ namespace FFImageLoadingMockTest.Test
             Assert.IsNotNull(page);
         }
 
+        [Test]
+        public void TestThorPage()
+        {
+            var page = new ThorPage();
+            Assert.IsNotNull(page);
+        }
+
         [TearDown]
         public void TearDown()
         {
