@@ -11,9 +11,9 @@ namespace FFImageLoadingMockTest.Test
         [SetUp]
         public void SetUp()
         {
+            ImageService.EnableMockImageService = true;
             Xamarin.Forms.Mocks.MockForms.Init();
             Application.Current = new App();
-            ImageService.EnableMockImageService = true;
         }
 
         [Test]
