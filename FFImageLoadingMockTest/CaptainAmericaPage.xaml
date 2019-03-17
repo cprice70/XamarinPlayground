@@ -2,6 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FFImageLoadingMockTest.CaptainAmericaPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <ffimageloading:SvgCachedImage Source="resource://FFImageLoadingMockTest.Assets.Captain_America_Shield.svg" />
+        <ffimageloading:SvgCachedImage Source="resource://FFImageLoadingMockTest.Assets.Captain_America_Shield.svg" WidthRequest="500" HeightRequest="500" />
     </StackLayout>
 </ContentPage>

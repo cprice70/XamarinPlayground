@@ -1,6 +1,8 @@
 ﻿using FFImageLoading;
 using NUnit.Framework;
 using System;
+using Xamarin.Forms;
+
 namespace FFImageLoadingMockTest.Test
 {
     [TestFixture]
@@ -10,6 +12,7 @@ namespace FFImageLoadingMockTest.Test
         public void SetUp()
         {
             Xamarin.Forms.Mocks.MockForms.Init();
+            Application.Current = new App();
             ImageService.EnableMockImageService = true;
         }
 
@@ -32,6 +35,12 @@ namespace FFImageLoadingMockTest.Test
         {
             var page = new IronManPage();
             Assert.IsNotNull(page);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            Application.Current = null;
         }
     }
 }
