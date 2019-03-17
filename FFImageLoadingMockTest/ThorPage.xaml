@@ -2,6 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FFImageLoadingMockTest.ThorPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Image Source="thor512.png" WidthRequest="500" HeightRequest="500" />
+        <Image x:Name="logo" WidthRequest="500" HeightRequest="500" />
     </StackLayout>
 </ContentPage>

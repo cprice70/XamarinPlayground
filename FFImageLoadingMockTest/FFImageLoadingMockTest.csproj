@@ -26,6 +26,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets\Captain_America_Shield.svg" />
     <EmbeddedResource Include="Assets\ironman-icon-png-8.png" />
-    <EmbeddedResource Include="Assets\thor-512.png" />
+    <EmbeddedResource Include="Assets\thor512.png" />
   </ItemGroup>
 </Project>
