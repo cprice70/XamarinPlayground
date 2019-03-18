@@ -12,7 +12,7 @@ namespace FFImageLoadingMockTest.Test
         public void SetUp()
         {
             ImageService.EnableMockImageService = true;
-            Xamarin.Forms.Mocks.MockForms.Init();
+            Xamarin.Forms.Mocks.MockForms.Init(Device.Android);
             Application.Current = new App();
         }
 
