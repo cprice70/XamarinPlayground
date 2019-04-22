@@ -46,25 +46,25 @@
       <HintPath>..\packages\Xamarin.Forms.Mocks.3.5.0\lib\netstandard2.0\Xamarin.Forms.Xaml.UnitTests.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading">
-      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.4.859\lib\netstandard1.0\FFImageLoading.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading.Platform">
-      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.4.859\lib\netstandard1.0\FFImageLoading.Platform.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.Platform.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading.Forms">
-      <HintPath>..\packages\Xamarin.FFImageLoading.Forms.2.4.4.859\lib\netstandard1.0\FFImageLoading.Forms.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.Forms.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.Forms.dll</HintPath>
     </Reference>
     <Reference Include="SkiaSharp">
       <HintPath>..\packages\SkiaSharp.1.60.0\lib\net45\SkiaSharp.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading.Svg.Platform">
-      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.2.4.4.859\lib\netstandard1.0\FFImageLoading.Svg.Platform.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.Svg.Platform.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading.Svg.Forms">
-      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.Forms.2.4.4.859\lib\netstandard1.0\FFImageLoading.Svg.Forms.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.Svg.Forms.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.Svg.Forms.dll</HintPath>
     </Reference>
     <Reference Include="FFImageLoading.Transformations">
-      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.4.859\lib\netstandard1.0\FFImageLoading.Transformations.dll</HintPath>
+      <HintPath>..\packages\Xamarin.FFImageLoading.Transformations.2.4.5.909-pre\lib\netstandard1.0\FFImageLoading.Transformations.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

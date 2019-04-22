@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FFImageLoading.Forms.Platform;
+using FFImageLoading;
 
 namespace FFImageLoadingMockTest.Droid
 {
@@ -19,7 +21,19 @@ namespace FFImageLoadingMockTest.Droid
 
             base.OnCreate(savedInstanceState);
 
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+            Xamarin.Forms.Forms.SetFlags("FastRenderers_Experimental");
+            CachedImageRenderer.Init(true);
+
+            var config = new FFImageLoading.Config.Configuration()
+            {
+                VerboseLogging = false,
+                VerbosePerformanceLogging = false,
+                VerboseMemoryCacheLogging = false,
+                VerboseLoadingCancelledLogging = false,
+
+            };
+
+            ImageService.Instance.Initialize(config);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
