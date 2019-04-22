@@ -14,6 +14,7 @@
     <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.5.909-pre" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.5.909-pre" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.5.909-pre" />
+    <PackageReference Include="SkiaSharp" Version="1.68.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
