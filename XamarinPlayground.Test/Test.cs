@@ -1,9 +1,8 @@
 ﻿using FFImageLoading;
 using NUnit.Framework;
-using System;
 using Xamarin.Forms;
 
-namespace FFImageLoadingMockTest.Test
+namespace XamarinPlayground.Test
 {
     [TestFixture]
     public class Test
