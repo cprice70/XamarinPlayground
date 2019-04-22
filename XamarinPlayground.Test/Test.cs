@@ -11,7 +11,7 @@ namespace XamarinPlayground.Test
         public void SetUp()
         {
             ImageService.EnableMockImageService = true;
-            Xamarin.Forms.Mocks.MockForms.Init(Device.Android);
+            Xamarin.Forms.Mocks.MockForms.Init();
             Application.Current = new App();
         }
 
