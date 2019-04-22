@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace FFImageLoadingMockTest
+namespace XamarinPlayground
 {
     public partial class CaptainAmericaPage : ContentPage
     {

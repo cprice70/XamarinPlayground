@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Xamarin.Forms;
 
-namespace FFImageLoadingMockTest
+namespace XamarinPlayground
 {
     public partial class ThorPage : ContentPage
     {
@@ -11,7 +11,7 @@ namespace FFImageLoadingMockTest
         {
             InitializeComponent();
 
-            logo.Source = ImageSource.FromResource("FFImageLoadingMockTest.Assets.thor512.png", typeof(ThorPage).GetTypeInfo().Assembly);
+            logo.Source = ImageSource.FromResource("XamarinPlayground.Assets.thor512.png", typeof(ThorPage).GetTypeInfo().Assembly);
 
         }
     }

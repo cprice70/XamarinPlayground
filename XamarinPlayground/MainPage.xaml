@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage x:Name="mainPage" xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:DataType="{x:Reference MainPageViewModel}"
+             x:Class="XamarinPlayground.MainPage">
+    <ContentPage.Content>
+    <ListView x:Name="listView" ItemsSource="{Binding Heroes}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="8" Orientation="Horizontal">
+                            <ffimageloading:SvgCachedImage VerticalOptions="Center" Source="{Binding Logo}" HeightRequest="36" WidthRequest="36" />
+                            <Label VerticalOptions="Center" Text="{Binding Name}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+     </ContentPage.Content>
+   
+</ContentPage>
