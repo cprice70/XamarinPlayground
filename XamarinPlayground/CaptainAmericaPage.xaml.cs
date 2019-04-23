@@ -11,5 +11,15 @@ namespace XamarinPlayground
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (logo.Source == null)
+            {
+                logo.Source = "resource://XamarinPlayground.Assets.Captain_America_Shield.svg";
+            }
+        }
     }
 }

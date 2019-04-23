@@ -8,7 +8,7 @@ using Android.Widget;
 using Android.OS;
 using FFImageLoading.Forms.Platform;
 using FFImageLoading;
-
+using FFImageLoading.Svg.Forms;
 
 namespace XamarinPlayground.Droid
 {
@@ -25,18 +25,17 @@ namespace XamarinPlayground.Droid
             Xamarin.Forms.Forms.SetFlags("FastRenderers_Experimental");
             CachedImageRenderer.Init(true);
 
-            var config = new FFImageLoading.Config.Configuration()
+            var config = new FFImageLoading.Config.Configuration
             {
                 VerboseLogging = false,
                 VerbosePerformanceLogging = false,
                 VerboseMemoryCacheLogging = false,
-                VerboseLoadingCancelledLogging = false,
-
+                VerboseLoadingCancelledLogging = false
             };
 
             ImageService.Instance.Initialize(config);
-
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            var ignore = typeof(SvgCachedImage);
+            Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
     }
