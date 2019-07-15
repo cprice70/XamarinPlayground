@@ -25,21 +25,32 @@ namespace XamarinPlayground.Test
         [Test]
         public void TestCaptainPage()
         {
-            var page = new CaptainAmericaPage();
+            var viewModel = new MainPageViewModel();
+            var page = new HeroPage(viewModel.Heroes[0]);
             Assert.IsNotNull(page);
         }
 
         [Test]
         public void TestIronManPage()
         {
-            var page = new IronManPage();
+            var viewModel = new MainPageViewModel();
+            var page = new HeroPage(viewModel.Heroes[1]);
             Assert.IsNotNull(page);
         }
 
         [Test]
         public void TestThorPage()
         {
-            var page = new ThorPage();
+            var viewModel = new MainPageViewModel();
+            var page = new HeroPage(viewModel.Heroes[2]);
+            Assert.IsNotNull(page);
+        }
+
+        [Test]
+        public void TestMarvelPage()
+        {
+            var viewModel = new MainPageViewModel();
+            var page = new HeroPage(viewModel.Heroes[3]);
             Assert.IsNotNull(page);
         }
 

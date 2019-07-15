@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:XamarinPlayground"
              x:DataType="local:MainPageViewModel"
              Title="Marvel Heroes"
+             Visual="Material"
              x:Class="XamarinPlayground.MainPage">
     <ContentPage.Content>
     <ListView x:Name="listView" ItemsSource="{Binding Heroes}">
