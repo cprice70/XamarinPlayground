@@ -9,23 +9,9 @@ namespace XamarinPlayground
 {
     public partial class MainPage : ContentPage
     {
-        void Handle_Captain_Clicked(object sender, System.EventArgs e)
+        void Handle_Clicked(Hero hero)
         {
-            var page = new CaptainAmericaPage();
-            Navigation.PushAsync (page);
-            listView.SelectedItem = null;
-        }
-
-        void Handle_IronMan_Clicked(object sender, System.EventArgs e)
-        {
-            var page = new IronManPage();
-            Navigation.PushAsync (page);
-            listView.SelectedItem = null;
-        }
-
-        void Handle_Thor_Clicked(object sender, System.EventArgs e)
-        {
-            var page = new ThorPage();
+            var page = new HeroPage(hero);
             Navigation.PushAsync(page);
             listView.SelectedItem = null;
         }
@@ -43,20 +29,7 @@ namespace XamarinPlayground
         {
             if (e.Item is Hero hero)
             {
-                switch (hero.Name)
-                {
-                    case "Captain America":
-                        Handle_Captain_Clicked(sender, e);
-                        break;
-
-                    case "IronMan":
-                        Handle_IronMan_Clicked(sender, e);
-                        break;
-
-                    case "Thor":
-                        Handle_Thor_Clicked(sender, e);
-                        break;
-                }
+                Handle_Clicked(hero);
             }
         }
 

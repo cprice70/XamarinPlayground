@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Title="IronMan" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinPlayground.IronManPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <ffimageloading:CachedImage Source="resource://XamarinPlayground.Assets.ironman-icon-png-8.png" WidthRequest="500" HeightRequest="500" />
-    </StackLayout>
-</ContentPage>

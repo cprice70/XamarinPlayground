@@ -18,7 +18,9 @@ namespace XamarinPlayground
                 ImageService.Instance.LoadEmbeddedResource("Captain_America_Shield.svg", typeof(App).GetTypeInfo().Assembly)
                     .WithCustomDataResolver(new SvgDataResolver(512, 512, true))
                     .Preload();
-
+                ImageService.Instance.LoadEmbeddedResource("captain_marvel.svg", typeof(App).GetTypeInfo().Assembly)
+                    .WithCustomDataResolver(new SvgDataResolver(512, 512, true))
+                    .Preload();
                 ImageService.Instance.LoadEmbeddedResource("XamarinPlayground.Assets.ironman-icon-png-8.png").Preload();
                 ImageService.Instance.LoadEmbeddedResource("XamarinPlayground.Assets.thor512.png").Preload();
             }

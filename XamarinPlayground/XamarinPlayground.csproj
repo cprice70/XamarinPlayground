@@ -24,10 +24,12 @@
     <None Remove="Assets\Captain_America_Shield.svg" />
     <None Remove="Assets\ironman-icon-png-8.png" />
     <None Remove="Assets\thor-512.png" />
+    <None Remove="Assets\captain_marvel.svg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\Captain_America_Shield.svg" />
     <EmbeddedResource Include="Assets\ironman-icon-png-8.png" />
     <EmbeddedResource Include="Assets\thor512.png" />
+    <EmbeddedResource Include="Assets\captain_marvel.svg" />
   </ItemGroup>
 </Project>

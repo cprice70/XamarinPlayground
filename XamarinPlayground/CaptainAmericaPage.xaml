@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Title="Captain America" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinPlayground.CaptainAmericaPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <ffimageloading:SvgCachedImage x:Name="logo" WidthRequest="500" HeightRequest="500" />
-    </StackLayout>
-</ContentPage>
