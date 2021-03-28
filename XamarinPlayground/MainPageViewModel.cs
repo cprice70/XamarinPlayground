@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Windows.Input;
+using Xamarin.CommunityToolkit.ObjectModel;
+using Xamarin.Forms;
 
 namespace XamarinPlayground
 {
@@ -17,5 +21,12 @@ namespace XamarinPlayground
             new Hero("Captain Marvel", "resource://XamarinPlayground.Assets.captain_marvel.svg")
         };
 
+        public ICommand ItemCommand { get; } = new Command<object>( (item) =>
+        {
+            if (item is Hero selectedHero)
+            {
+                Debug.WriteLine("Selected");
+            }
+        });
     }
 }

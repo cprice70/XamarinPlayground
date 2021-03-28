@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace XamarinPlayground
 {
-    public partial class MainPage : ContentPage
-    {
-        void Handle_Clicked(Hero hero)
+    public partial class MainPage
+    { 
+        private async Task Handle_Clicked(Hero hero)
         {
             var page = new HeroPage(hero);
-            Navigation.PushAsync(page);
+            await Navigation.PushAsync(page);
             listView.SelectedItem = null;
         }
 
@@ -20,18 +16,20 @@ namespace XamarinPlayground
         {
             InitializeComponent();
 
+            listView.SelectionMode = SelectionMode.Single;
+
             BindingContext = new MainPageViewModel();
 
-            listView.ItemTapped += ListView_ItemTapped;
+            listView.SelectionChanged += ListViewOnSelectionChanged;
+            //listView. += ListView_ItemTapped;
         }
 
-        void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListViewOnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (e.Item is Hero hero)
+            if (e.CurrentSelection.Count > 0 && e.CurrentSelection[0] is Hero hero)
             {
-                Handle_Clicked(hero);
+                await Handle_Clicked(hero);
             }
         }
-
     }
 }
