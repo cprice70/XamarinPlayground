@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
         Title="{Binding Name}"
-        xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms" 
         xmlns:local="clr-namespace:XamarinPlayground"
         x:DataType="local:Hero"
-        xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinPlayground.HeroPage">
+        xmlns="http://xamarin.com/schemas/2014/forms" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:controls="clr-namespace:XamarinPlayground.Controls;assembly=XamarinPlayground"
+        x:Class="XamarinPlayground.HeroPage">
     <ContentPage.Content>
-        <StackLayout>
-          <ffimageloading:SvgCachedImage Source="{Binding Logo}" x:Name="logo" WidthRequest="500" HeightRequest="500" />
-        </StackLayout>
+        <controls:SvgImage Source="{Binding Logo}" />
     </ContentPage.Content>
 </ContentPage>

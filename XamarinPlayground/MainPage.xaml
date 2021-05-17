@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage x:Name="mainPage" xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinPlayground"
+             xmlns:controls="clr-namespace:XamarinPlayground.Controls;assembly=XamarinPlayground"
              x:DataType="local:MainPageViewModel"
              Title="Marvel Heroes"
              Visual="Material"
              x:Class="XamarinPlayground.MainPage">
     <ContentPage.Content>
-    <CollectionView SelectedItem="Single" x:Name="listView" SelectionChangedCommand="{Binding ItemCommand}"  ItemsSource="{Binding Heroes}">
+    <CollectionView SelectedItem="Single" ItemSizingStrategy="MeasureFirstItem" x:Name="ListView" SelectionChangedCommand="{Binding ItemCommand}"  ItemsSource="{Binding Heroes}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout x:DataType="local:Hero" Margin="8" Orientation="Horizontal">
-                        <ffimageloading:SvgCachedImage VerticalOptions="Center" Source="{Binding Logo}" HeightRequest="36" WidthRequest="36" />
+                    <StackLayout HeightRequest="48" x:Name="listitem" x:DataType="local:Hero" Margin="8" Orientation="Horizontal">
+                        <controls:SvgImage Margin="8, 0" VerticalOptions="Center" WidthRequest="36" x:Name="icon" AssemblyName="XamarinPlayground" Source="{Binding Logo}"/>
                         <Label VerticalOptions="Center" Text="{Binding Name}" />
                     </StackLayout>
                 </DataTemplate>

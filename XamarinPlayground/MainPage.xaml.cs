@@ -9,19 +9,18 @@ namespace XamarinPlayground
         {
             var page = new HeroPage(hero);
             await Navigation.PushAsync(page);
-            listView.SelectedItem = null;
+            ListView.SelectedItem = null; ;
         }
 
         public MainPage()
         {
             InitializeComponent();
 
-            listView.SelectionMode = SelectionMode.Single;
+            ListView.SelectionMode = SelectionMode.Single;
 
             BindingContext = new MainPageViewModel();
 
-            listView.SelectionChanged += ListViewOnSelectionChanged;
-            //listView. += ListView_ItemTapped;
+            ListView.SelectionChanged += ListViewOnSelectionChanged;
         }
 
         private async void ListViewOnSelectionChanged(object sender, SelectionChangedEventArgs e)

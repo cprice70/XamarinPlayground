@@ -19,9 +19,8 @@ namespace XamarinPlayground.iOS
         //
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
-
             global::Xamarin.Forms.Forms.Init();
+            Xamarin.Forms.Svg.iOS.SvgImage.Init();
             FormsMaterial.Init();
             LoadApplication(new App());
 

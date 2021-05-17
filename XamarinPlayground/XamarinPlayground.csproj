@@ -10,13 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
-    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
-    <PackageReference Include="SkiaSharp" Version="1.68.0" />
-    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
-    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="SkiaSharp" Version="2.80.2" />
     <PackageReference Include="Xamarin.Forms.Visual.Material" Version="5.0.0.2012" />
   </ItemGroup>
   <ItemGroup>
@@ -33,5 +32,9 @@
     <EmbeddedResource Include="Assets\ironman-icon-png-8.png" />
     <EmbeddedResource Include="Assets\thor512.png" />
     <EmbeddedResource Include="Assets\captain_marvel.svg" />
+    <None Remove="Assets\ironman-icon.svg" />
+    <EmbeddedResource Include="Assets\ironman-icon.svg" />
+    <None Remove="Assets\thor512.svg" />
+    <EmbeddedResource Include="Assets\thor512.svg" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿using FFImageLoading;
+﻿
 using NUnit.Framework;
 using Xamarin.Forms;
 
@@ -10,7 +10,6 @@ namespace XamarinPlayground.Test
         [SetUp]
         public void SetUp()
         {
-            ImageService.EnableMockImageService = true;
             Xamarin.Forms.Mocks.MockForms.Init();
             Application.Current = new App();
         }

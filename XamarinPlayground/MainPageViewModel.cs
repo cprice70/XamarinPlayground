@@ -15,10 +15,10 @@ namespace XamarinPlayground
         }
 
         public List<Hero> Heroes { get; } = new List<Hero>() {
-            new Hero("Captain America", "resource://XamarinPlayground.Assets.Captain_America_Shield.svg"),
-            new Hero("IronMan", "resource://XamarinPlayground.Assets.ironman-icon-png-8.png"),
-            new Hero("Thor", "resource://XamarinPlayground.Assets.thor512.png"),
-            new Hero("Captain Marvel", "resource://XamarinPlayground.Assets.captain_marvel.svg")
+            new Hero("Captain America", "Assets.Captain_America_Shield.svg"),
+            new Hero("IronMan", "Assets.ironman-icon.svg"),
+            new Hero("Thor", "Assets.thor512.svg"),
+            new Hero("Captain Marvel", "Assets.captain_marvel.svg")
         };
 
         public ICommand ItemCommand { get; } = new Command<object>( (item) =>
