@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -67,7 +67,7 @@
     <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.2.2.1" />
     <PzckageReference Include="Xamarin.AndroidX.Palette" Version="1.0.0.5" />
     <PackageReference Include="SkiaSharp">
-      <Version>2.80.2</Version>
+      <Version>2.88.6</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.Visual.Material">
       <Version>5.0.0.2012</Version>
